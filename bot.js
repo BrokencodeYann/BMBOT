@@ -192,6 +192,10 @@ db.get("xp").find({user: msgauthor}).assign({user: msgauthor, xp: userxp[1] +=1}
 
 });
 
+"devDependencies": {
+  "lodash": ">=4.17.19"
+}
+
     © 2019 GitHub, Inc.
     Terms
     Privacy
