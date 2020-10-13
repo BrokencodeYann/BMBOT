@@ -70,15 +70,6 @@ db.get("xp").find({user: msgauthor}).assign({user: msgauthor, xp: userxp[1] +=1}
     if (message.content === "Bienvenue") {
         message.reply("Bienvenue");
     }
-    if (message.content === "azelpy") {
-        message.reply("Mec sympa, on le voit rarement mais quand il est là, il met l'ambiance.");
-    }
-    if (message.content === "etau") {
-        message.reply("Mon petit QC :heart: ");
-    }
-    if (message.content === "yann") {
-        message.reply("Lui, c'est le meilleur de tous ! l'empereur du monde");
-    }
     if (message.content === "Bitcoin") {
         message.reply("Le bitcoin est la crypto-monnaie la plus connue.");
     }
@@ -163,32 +154,6 @@ db.get("xp").find({user: msgauthor}).assign({user: msgauthor, xp: userxp[1] +=1}
                     .addField("Robot par Yann","BITMINING")
                     message.channel.send({embed: creator_embed});
             }
-
-           //  case "kick":
-               
-             //  if(!message.channel.permissionsFor(message.member).hasPermission("KICK_MEMBERS")) {
-               //    message.reply("Vous n'avez pas les permissions pour Kick !")
-               //}else {
-                 //  var memberkick = message.mentions.members.first();
-                   //console.log(memberkick)
-                   //console.log(message.guild.member(memberkick).kickable)
-                   //if(!memberkick) {
-                    //   message.reply("L'utilisatezr n'est pas présent.")
-                   //}else{
-                     //  if(!message.guild.member(memberkick).kickable){
-                       //    message.reply("Utilisateur impossible à kick ...")
-                       //}else{
-                        //message.guild.member(memberkick).kick().then((member) => {
-                        //message.channel.send(`${member.displayName} à été kick : Kick envoyé`);
-                       //}).catch(() => {
-                         //  message.channel.send("Kick Refusé !")
-                   //    })
-                  // }
-             //  }
-           // }
-            //   break;
- 
-           // }
 
 });
 
